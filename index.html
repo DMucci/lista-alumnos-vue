@@ -13,7 +13,10 @@
     <main class="container" id="app">
 
         <article v-for="s in students">
-            <p>Hola yo soy Galis</p>
+            
+                <p>  <span :style= "{backgroundColor: s.length>7 ? 'yellow' : 'initial'}">{{s}}</span>
+            </p>
+            
         </article>
 
     </main>
